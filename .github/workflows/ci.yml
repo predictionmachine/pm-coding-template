@@ -35,7 +35,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install --upgrade wheel pip
-          # pip install -r projectname/requirements.txt -r projectname/requirements-dev.txt
+          pip install -r projectname/requirements.txt
 #      - name: Test with pytest --cov
 #        run: |
 #          pytest --cov-report=xml:coverage.projectname.xml --cov-report=term --cov=projectname projectname
