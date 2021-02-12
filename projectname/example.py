@@ -9,7 +9,7 @@ This file is an example of what a python file can look like
 from typing import List, NewType
 
 # Use NewType to create meaningful distinct types, per https://docs.python.org/3/library/typing.html
-UserId = NewType('UserId', int)
+UserId = NewType("UserId", int)
 some_id = UserId(524313)
 
 
