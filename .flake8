@@ -1,0 +1,10 @@
+[flake8]
+# see https://flake8.pycqa.org/en/latest/user/options.html#options-list
+exclude =
+    .ipynb_checkpoints
+# E731: https://www.flake8rules.com/rules/E731.html -- do not assign lambda expression, use a def
+# W503: https://www.flake8rules.com/rules/W503.html -- line break before binary operator
+ignore = E731,W503
+count = True
+statistics = True
+max-line-length = 127
