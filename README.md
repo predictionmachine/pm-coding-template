@@ -24,6 +24,7 @@ as a way to pair on code, a surprisingly fruitful technique
   are your friend
 * Do put a disclaimer at the top of each file
   * See [projectname/example.py](projectname/example.py) for an example
+  * You can adjust PyCharm http://prntscr.com/1011gyr and then pick it http://prntscr.com/1011fz5
 * Organize code in namespace and files. `tests` dir inside the namespace
 * Use `pytest` as the default testing library (and more if you need)
 * Use type hints and [mypy](https://mypy.readthedocs.io/en/stable/).
