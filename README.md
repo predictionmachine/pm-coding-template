@@ -6,15 +6,21 @@ please review the basics:
 
 ## Dev Environment
 * Mac/Linux preferred. For Windows, use [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
-* use `python3.8` for compatibility, eg if we deploy your code as AWS Lambda
-* If you are a long term contributor we prefer that you use the
+* do use separate [virtual env](https://docs.python.org/3/library/venv.html) for each repo
+* IDE:
+  * For long-term contributors we prefer that you use the
   [PyCharm](https://www.jetbrains.com/pycharm/) IDE (if you are already
   using IntelliJ, IntelliJ with Python plugin may work)
-* (beta) We are evaluating [Code With Me](https://plugins.jetbrains.com/plugin/14896-code-with-me)
+  * [VSCode](https://code.visualstudio.com/) may also be viable if that's your strong preference
+* Pair Programming:
+  * (beta) We are evaluating [Code With Me](https://plugins.jetbrains.com/plugin/14896-code-with-me)
 as a way to pair on code, a surprisingly fruitful technique
-* do use separate [virtual env](https://docs.python.org/3/library/venv.html) for each repo
-* do pin dependency versions in requirements.txt with ~= [TODO: need a example]
+* Dependencies:
+  * Target `python3.8` for compatibility (eg with AWS Lambda)
+  * Pin dependency versions in requirements.txt with `~=`, eg `flake8~=3.8.4`
+* file names are normally all lowercase
 * when file names must have multiple words, use _ not -
+* Organize code in namespace and files. `tests` dir inside the namespace
 
 ## Code Contents
 * 🛑 Do not put passwords, API keys or other credentials, in source files or
@@ -22,21 +28,29 @@ as a way to pair on code, a surprisingly fruitful technique
   less brittle and keeps the credentials secure. Winning! 🙌
 * 🛑 Do not hardcode your local paths to data files etc. Again, env variables
   are your friend
-* Do put a disclaimer at the top of each file
-  * See [projectname/example.py](projectname/example.py) for an example
-  * You can adjust PyCharm http://prntscr.com/1011gyr and then pick it http://prntscr.com/1011fz5
-* Organize code in namespace and files. `tests` dir inside the namespace
-* Use `pytest` as the default testing library (and more if you need)
-* Use type hints and [mypy](https://mypy.readthedocs.io/en/stable/).
+* License:
+  * Do put a disclaimer at the top of each file
    * See [projectname/example.py](projectname/example.py) for an example
-   * We recommend [mypy plugin](https://plugins.jetbrains.com/plugin/11086-mypy)
-     for the IDE
+   * You can enter it [in PyCharm](http://prntscr.com/1011gyr) and then [pick it](http://prntscr.com/1011fz5)
 
-## Github commits
-* Create a branch with a descriptive name, eg `tchklovski/document-practices`
-  Or even `tchklovski/docs/document-practices`. The IDE uses `/` in branch
+* Documentation:
+  * We expect all code to have [Google Style Python Docstrings](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html#example-google)
+* Testing:
+  * We expect shipped code to have close to 100% test coverage
+  * Use [pytest](https://docs.pytest.org/en/stable/) as the default testing library
+* Type hints:
+  * Use type hints and [mypy](https://mypy.readthedocs.io/en/stable/).
+  * See [projectname/example.py](projectname/example.py) for an example
+  * We recommend the [mypy plugin](https://plugins.jetbrains.com/plugin/11086-mypy) for the IDE
+
+
+## Github: branches, pull requests
+* Code is considered "shipped" (🎉) when it is accepted as a pull request and merged in `main`.
+* To be mergeable, red (failed) checks need to be addressed
+* Create a branch with a descriptive name, eg `tchklovski/01-document-practices`
+  Or even `tchklovski/docs/01-document-practices`. The IDE uses `/` in branch
   name to group changes, which can be helpful
-  Push your changes to the branch and then submit a pull request to merge to
+* Push your changes to the branch and then submit a pull request to merge to
   master. Assign the pull request reviewing duties to the person you are
   reporting to. You can do this in the IDE or on github.
 * Write a descriptive message summarizing your commit, and even state what
@@ -46,6 +60,6 @@ as a way to pair on code, a surprisingly fruitful technique
   checking, notebook cleaning check, and fail if any of these fail (so that you
   can fix the pull request rather than break master)
   
-  Over time feel free to propose enhancements to actions, eg adding files ending
+  Feel free to propose enhancements to github actions, eg adding files ending
   in `.zip` or `.parquet` should cause a pull request to fail. The best
   proposal is one you are ready to implement yourself.
