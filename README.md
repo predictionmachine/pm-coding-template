@@ -23,10 +23,12 @@ as a way to pair on code, a surprisingly fruitful technique
 * Organize code in namespace and files. `tests` dir inside the namespace
 
 ## Code Contents
-* 🛑 Do not put passwords, API keys or other credentials, in source files or
+* 🛑 No hardcoded credentials:
+  * Do not put passwords, API keys or other credentials in source files or
   jupyter notebooks. Load them from environment variables. This makes your code
   less brittle and keeps the credentials secure. Winning! 🙌
-* 🛑 Do not hardcode your local paths to data files etc. Again, env variables
+* 🛑 No hardcoded paths:
+  * Do not hardcode your local paths to data files etc. Again, env variables
   are your friend
 * License:
   * Do put a disclaimer at the top of each file
@@ -45,6 +47,9 @@ as a way to pair on code, a surprisingly fruitful technique
 
 
 ## Github: branches, pull requests
+* 🛑 No new repos: do not create a new repository on your own -- request one from tchklovski.
+  This keeps us more organized and naming consistent. In your request, specify what the code
+  in this repository will be responsible for doing. Consider what should be a shared repo.
 * Code is considered "shipped" (🎉) when it is accepted as a pull request and merged in `main`.
 * To be mergeable, red (failed) checks need to be addressed
 * Create a branch with a descriptive name, eg `tchklovski/01-document-practices`
