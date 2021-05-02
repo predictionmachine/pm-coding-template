@@ -1,6 +1,6 @@
 ### Related issues
 
-- Issues goes here
+- Issue goes here if any, else add what this PR does.
 
 ### Submissions
 
@@ -22,4 +22,4 @@
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.
 
-- **Other information**:
+**Other information**:
