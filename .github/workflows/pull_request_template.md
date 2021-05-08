@@ -1,25 +1,26 @@
-### Related issues
 
-- Issue goes here if any, else add what this PR does.
+## Description
+Link to Clickup task for this: [link]
 
-### Submissions
+What functionality does this add/problem does this address?
+Issue  [_link to issue or a description_]
 
-- [ ] Have you followed the guidelines in our [Contributing document](https://github.com/predictionmachine/pm-coding-template)?
-- [ ] Have you checked to ensure there aren't other open [Pull Requests](../../../pulls) for the same update/change?
+This is a [small/large] change, [simple/complex] code.
+[_advice on what files to start the review with_]
 
-### Types of changes
-<!--- What types of changes does your code introduce? Put an `x` in all the boxes that apply: -->
-- [x] Bug fix (non-breaking change which fixes an issue)
-- [ ] New feature (non-breaking change which adds functionality)
-- [ ] Breaking change (fix or feature that would cause existing functionality to change)
+- [ ] This PR part of a larger effort
+        - what will be addressed in separate PRs?
+- [ ] Proposing to commit this code with less documentation / testing than normal
+- [ ] Have you added TODO comments about the work that is not shipped by this PR, added comments about nice to have refactoring
 
-### Test cases and other details
+## Checklist
+- [ ] Does the PR have an informative, carefully chosen **title**?
+- [ ] Does the branch you propose to merge have your name in it, `your-name/more-about-change` ?
+- [ ] Updated README.md and inline documentation as appropriate
+- [ ] New files have copyright statement at the top and a careful, useful description of what the file does 
+- [x] Have you followed the other [Coding standards](https://github.com/predictionmachine/pm-coding-template#code-contents)?
+- [ ] Applied *labels* to the PR
 
-- [ ] My code follows the code style of this project.
-- [ ] The commit message follows our guidelines
-- [ ] My change requires a change to the documentation.
-- [ ] I have updated the documentation accordingly.
-- [ ] I have added tests to cover my changes.
-- [ ] All new and existing tests passed.
-
-**Other information**:
+## Special notes for your reviewer:
+   Add aditional notes here, if you have for reviewer.
+   
