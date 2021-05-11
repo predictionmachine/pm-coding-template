@@ -58,6 +58,8 @@ as a way to pair on code, a surprisingly fruitful technique
 * Push your changes to the branch and then submit a pull request to merge to
   master. Assign the pull request reviewing duties to the person you are
   reporting to. You can do this in the IDE or on github.
+* Use [this](/.github/workflows/pull_request_template.md) PR template,
+  with proper description, whenever you raise a new PR.
 * Write a descriptive message summarizing your commit, and even state what
   you are trying to accomplish/larger task you are working on
 * Use [GitHub Actions](https://docs.github.com/en/actions) to catch problems for
