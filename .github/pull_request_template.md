@@ -1,8 +1,8 @@
 ## Description
 ClickUp [task]() [_<- update link_]
 
-What functionality does this add/problem does this address?
-Issue  [_link to issue or provide a description_]
+[_What functionality does this add or problem does this fix?
+link to issue eg closes #22_]
 
 This is a [small/large] change, [simple/complex] code.
 [_advice on what files to start the review with_]
