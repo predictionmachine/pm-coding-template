@@ -1,7 +1,7 @@
-# Copyright (C) Prediction Machine Advisers, LLC - All Rights Reserved
-# Unauthorized copying of this file, via any medium is strictly prohibited
+# Copyright (C) 2021 Prediction Machine Advisers, LLC - All Rights Reserved
+# Unauthorized copying of this file via any medium is strictly prohibited
 # Proprietary and confidential
-# Written by staff at Prediction Machine, May 2021
+# Written by staff at Prediction Machine
 
 """
 This file deals with UserId
