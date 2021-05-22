@@ -1,4 +1,6 @@
 # pm-coding-template
+[![PM CI workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml/badge.svg)](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
+
 Documents and Illustrates Coding Standards used at Prediction Machine
 
 As you ramp up on contributing code to Prediction Machine, 
