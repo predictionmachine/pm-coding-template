@@ -18,10 +18,10 @@ Have you added:
 
 ## Checklist
 - [ ] Does the PR have an informative, carefully chosen **title**?
-- [ ] Does the branch you propose to merge have your name in it, `your-name/more-about-change` ?
 - [ ] Updated README.md and inline documentation as appropriate
 - [ ] New files have copyright statement at the top and a careful, useful description of what the file does
 - [x] Have you followed the other [Coding standards](https://github.com/predictionmachine/pm-coding-template#code-contents)?
 - [ ] Applied *labels* to the PR
 
+<!-- version 0.3.1 -->
 <!-- based on https://github.com/predictionmachine/pm-coding-template/blob/main/.github/pull_request_template.md -->
