@@ -30,7 +30,7 @@ jobs:
   check-branch-naming-convention:
     runs-on: ubuntu-latest
     name: Check branch naming convention as per pm-coding-template
-    if: ${{ github.event_name == 'pull_request' }}
+    # if: ${{ github.event_name == 'pull_request' }}
     env:
       BRANCH_NAME_RULE: 'https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests'
     steps:
@@ -49,13 +49,13 @@ jobs:
           header: invalid-branch-name-comments
           message: |
             👋 &nbsp; @${{ github.event.pull_request.user.login }}
-            Please use the valid branch name, [see here](${{ env.BRANCH_NAME_RULE }}).
-            Please make sure you have followed our [contributing guidelines](${{ env.GUIDELINE_REPO }}).
+            Please use a valid [branch name](${{ env.BRANCH_NAME_RULE }}).
+            Make sure you have followed our [contribution guidelines](${{ env.GUIDELINE_REPO }}).
       - name: Exit job for invalid branch name
         if: ${{ steps.branchCheck.outputs.is_valid_name == 'false' }}
         run: |
           echo "Invalid branch name: $GITHUB_HEAD_REF"
-          echo "Please use the standard mentioned here: ${{ env.BRANCH_NAME_RULE }}"
+          echo "Please use the standard mentioned here: $BRANCH_NAME_RULE"
           exit 1
 
   enforce-pr-description:
