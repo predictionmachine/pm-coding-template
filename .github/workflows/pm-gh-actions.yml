@@ -29,7 +29,7 @@ jobs:
   # Ref: https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests
   check-branch-naming-convention:
     runs-on: ubuntu-latest
-    name: Check branch naming convention as per `pm-coding-template`
+    name: Check branch naming convention as per pm-coding-template
     if: ${{ github.event_name == 'pull_request' }}
     env:
       BRANCH_NAME_RULE: 'https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests'
