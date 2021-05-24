@@ -24,13 +24,12 @@ env:
   GUIDELINE_REPO: 'https://github.com/predictionmachine/pm-coding-template'
 
 jobs:
-
   # Check branch name standard as per `pm-coding-template`
   # Ref: https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests
   check-branch-naming-convention:
     runs-on: ubuntu-latest
     name: Check branch naming convention as per pm-coding-template
-    # if: ${{ github.event_name == 'pull_request' }}
+    if: ${{ github.event_name == 'pull_request' }}
     env:
       BRANCH_NAME_RULE: 'https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests'
     steps:
