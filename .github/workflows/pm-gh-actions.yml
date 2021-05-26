@@ -2,7 +2,7 @@
 # Copyright (C) 2021 Prediction Machine Advisers, LLC
 # This file is available under MIT license
 # based on https://github.com/predictionmachine/pm-gh-actions/blob/main/.github/workflows/pm-gh-actions.yml
-# version 0.3.3
+# version 0.3.3.1
 ############################################################################################
 
 name: PM CI workflow
@@ -24,12 +24,11 @@ env:
   GUIDELINE_REPO: 'https://github.com/predictionmachine/pm-coding-template'
 
 jobs:
-
   # Check branch name standard as per `pm-coding-template`
   # Ref: https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests
   check-branch-naming-convention:
     runs-on: ubuntu-latest
-    name: Check branch naming convention as per `pm-coding-template`
+    name: Check branch naming convention as per pm-coding-template
     if: ${{ github.event_name == 'pull_request' }}
     env:
       BRANCH_NAME_RULE: 'https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests'
@@ -49,13 +48,13 @@ jobs:
           header: invalid-branch-name-comments
           message: |
             👋 &nbsp; @${{ github.event.pull_request.user.login }}
-            Please use the valid branch name, [see here](${{ env.BRANCH_NAME_RULE }}).
-            Please make sure you have followed our [contributing guidelines](${{ env.GUIDELINE_REPO }}).
+            Please use a valid [branch name](${{ env.BRANCH_NAME_RULE }}).
+            Make sure you have followed our [contribution guidelines](${{ env.GUIDELINE_REPO }}).
       - name: Exit job for invalid branch name
         if: ${{ steps.branchCheck.outputs.is_valid_name == 'false' }}
         run: |
           echo "Invalid branch name: $GITHUB_HEAD_REF"
-          echo "Please use the standard mentioned here: ${{ env.BRANCH_NAME_RULE }}"
+          echo "Please use the standard mentioned here: $BRANCH_NAME_RULE"
           exit 1
 
   enforce-pr-description:
@@ -205,7 +204,6 @@ jobs:
     env:
       MIN_DOC_COV: 100
       COVERAGE_OUTPUT_PATH: output/coverage.xml
-      PYTEST_OUTPUT_PATH: output/pytest.xml
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -229,7 +227,7 @@ jobs:
           if [ requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
       - name: Test with pytest
         run: |
-          python -m pytest --continue-on-collection-errors --junit-xml $PYTEST_OUTPUT_PATH
+          python -m pytest --continue-on-collection-errors
       # HANDLE COVERAGE
       - name: Generate coverage report
         run: |
@@ -243,11 +241,6 @@ jobs:
           files: ${{ env.COVERAGE_OUTPUT_PATH }}
           fail_ci_if_error: true # optional (default = false)
           verbose: true # optional (default = false)
-      - name: Show unit test results
-        uses: EnricoMi/publish-unit-test-result-action@v1
-        if: always()
-        with:
-          files: ${{ env.PYTEST_OUTPUT_PATH }}
       - name: Upload code coverage to codeclimate
         uses: paambaati/codeclimate-action@v2.7.5
         env:
