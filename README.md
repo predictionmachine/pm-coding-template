@@ -1,5 +1,7 @@
 # pm-coding-template
+[![codecov](https://codecov.io/gh/predictionmachine/pm-coding-template/branch/main/graph/badge.svg?token=W1bAJ3l546)](https://codecov.io/gh/predictionmachine/pm-coding-template)
 [![PM CI workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml/badge.svg)](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Documents and Illustrates Coding Standards used at Prediction Machine
 
@@ -60,7 +62,7 @@ as a way to pair on code, a surprisingly fruitful technique
 * Push your changes to the branch and then submit a pull request to merge to
   master. Assign the pull request reviewing duties to the person you are
   reporting to. You can do this in the IDE or on github.
-* Use [this](/.github/workflows/pull_request_template.md) PR template,
+* Use [this](.github/pull_request_template.md) PR template,
   with proper description, whenever you raise a new PR.
 * Write a descriptive message summarizing your commit, and even state what
   you are trying to accomplish/larger task you are working on
