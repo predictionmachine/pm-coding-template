@@ -1,6 +1,7 @@
 # pm-coding-template
-[![codecov](https://codecov.io/gh/predictionmachine/pm-coding-template/branch/main/graph/badge.svg?token=W1bAJ3l546)](https://codecov.io/gh/predictionmachine/pm-coding-template)
 [![PM CI workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml/badge.svg)](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
+<!-- see https://app.codecov.io/gh/predictionmachine/pm-coding-template/settings/badge -->
+[![codecov](https://codecov.io/gh/predictionmachine/pm-coding-template/branch/main/graph/badge.svg?token=W1bAJ3l546)](https://codecov.io/gh/predictionmachine/pm-coding-template)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
 Documents and Illustrates Coding Standards used at Prediction Machine
