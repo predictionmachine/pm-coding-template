@@ -28,6 +28,8 @@ as a way to pair on code, a surprisingly fruitful technique
 * file names are normally all lowercase
 * when file names must have multiple words, use _ not -
 * Organize code in namespace and files. `tests` dir inside the namespace
+* Configure and use [pre-commit hooks](https://pre-commit.com/#plugins). Copy [.pre-commit-config.yaml](.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
+
 
 ## Code Contents
 * 🛑 No hardcoded credentials:
