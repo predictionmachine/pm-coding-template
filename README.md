@@ -82,7 +82,7 @@ as a way to pair on code, a surprisingly fruitful technique
 * Update the status badges:
   * [code style - black](https://github.com/psf/black)
   <!-- see https://github.com/psf/black#show-your-style -->
-  * [PM CI Workflow](/actions/workflows/pm-gh-actions.yml)
+  * [PM CI Workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
   <!-- see https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge -->
   * [codecov](https://about.codecov.io/product/feature/badges/)
   <!-- see https://app.codecov.io/gh/predictionmachine/event-tools/settings/badge -->
