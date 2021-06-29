@@ -8,7 +8,7 @@
 
 Documents and Illustrates Coding Standards used at Prediction Machine
 
-As you ramp up on contributing code to Prediction Machine, 
+As you ramp up on contributing code to Prediction Machine,
 please review the basics:
 
 ## Dev Environment
@@ -75,7 +75,16 @@ as a way to pair on code, a surprisingly fruitful technique
   you. Actions should run the test suite, black formatting check, mypy type
   checking, notebook cleaning check, and fail if any of these fail (so that you
   can fix the pull request rather than break master)
-  
+
   Feel free to propose enhancements to github actions, eg adding files ending
   in `.zip` or `.parquet` should cause a pull request to fail. The best
   proposal is one you are ready to implement yourself.
+* Update the status badges:
+  * [code style - black](https://github.com/psf/black)
+  <!-- see https://github.com/psf/black#show-your-style -->
+  * [PM CI Workflow](/actions/workflows/pm-gh-actions.yml)
+  <!-- see https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge -->
+  * [codecov](https://about.codecov.io/product/feature/badges/)
+  <!-- see https://app.codecov.io/gh/predictionmachine/event-tools/settings/badge -->
+  * [maintainability - codeclimate](https://codeclimate.com/github/codeclimate/codeclimate/badges)
+  <!-- see https://codeclimate.com/repos/6094b3d1a32d9010d700292e/badges#maintainability-markdown -->
