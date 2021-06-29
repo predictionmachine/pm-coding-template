@@ -84,7 +84,6 @@ as a way to pair on code, a surprisingly fruitful technique
   * [code style - black](https://github.com/psf/black)
   <!-- see https://app.codecov.io/gh/predictionmachine/event-tools/settings/badge -->
   * [codecov](https://about.codecov.io/product/feature/badges/)
-  <!-- see https://codeclimate.com/repos/6094b3d1a32d9010d700292e/badges#maintainability-markdown -->
   * [maintainability - codeclimate](https://codeclimate.com/github/codeclimate/codeclimate/badges)
   <!-- see https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge -->
   * [PM CI Workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
