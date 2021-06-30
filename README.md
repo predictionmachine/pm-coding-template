@@ -1,5 +1,6 @@
 # pm-coding-template
 [![PM CI workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml/badge.svg)](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e4cab5c6472ba0512bd0/maintainability)](https://codeclimate.com/repos/602750680b442f4c8d007eb0/maintainability)
 <!-- see https://app.codecov.io/gh/predictionmachine/pm-coding-template/settings/badge -->
 [![codecov](https://codecov.io/gh/predictionmachine/pm-coding-template/branch/main/graph/badge.svg?token=W1bAJ3l546)](https://codecov.io/gh/predictionmachine/pm-coding-template)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
