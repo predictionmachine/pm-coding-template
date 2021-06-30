@@ -1,5 +1,6 @@
 # pm-coding-template
 [![PM CI workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml/badge.svg)](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/e4cab5c6472ba0512bd0/maintainability)](https://codeclimate.com/repos/602750680b442f4c8d007eb0/maintainability)
 <!-- see https://app.codecov.io/gh/predictionmachine/pm-coding-template/settings/badge -->
 [![codecov](https://codecov.io/gh/predictionmachine/pm-coding-template/branch/main/graph/badge.svg?token=W1bAJ3l546)](https://codecov.io/gh/predictionmachine/pm-coding-template)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
@@ -8,7 +9,7 @@
 
 Documents and Illustrates Coding Standards used at Prediction Machine
 
-As you ramp up on contributing code to Prediction Machine, 
+As you ramp up on contributing code to Prediction Machine,
 please review the basics:
 
 ## Dev Environment
@@ -75,7 +76,16 @@ as a way to pair on code, a surprisingly fruitful technique
   you. Actions should run the test suite, black formatting check, mypy type
   checking, notebook cleaning check, and fail if any of these fail (so that you
   can fix the pull request rather than break master)
-  
+
   Feel free to propose enhancements to github actions, eg adding files ending
   in `.zip` or `.parquet` should cause a pull request to fail. The best
   proposal is one you are ready to implement yourself.
+* Update the status badges:
+  <!-- see https://github.com/psf/black#show-your-style -->
+  * [code style - black](https://github.com/psf/black)
+  <!-- see https://app.codecov.io/gh/predictionmachine/event-tools/settings/badge -->
+  * [codecov](https://about.codecov.io/product/feature/badges/)
+  <!-- see https://codeclimate.com/repos/602750680b442f4c8d007eb0/badges-->
+  * [maintainability - codeclimate](https://codeclimate.com/github/codeclimate/codeclimate/badges)
+  <!-- see https://docs.github.com/en/actions/managing-workflow-runs/adding-a-workflow-status-badge -->
+  * [PM CI Workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
