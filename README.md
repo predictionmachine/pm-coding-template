@@ -8,7 +8,7 @@
 
 (If forking this template repo, please update this readme accordingly)
 
-* Update the status badges: (once updated,remove this section)
+* Update the status badges: (once updated, remove this section)
   <!-- see https://github.com/psf/black#show-your-style -->
   * [code style - black](https://github.com/psf/black)
   <!-- see https://app.codecov.io/gh/predictionmachine/event-tools/settings/badge -->
@@ -29,8 +29,14 @@ to examine its changes:
 pre-commit run --all-files
 ```
 
-**Updating hooks automatically**
+**Updating pre-commit hooks automatically**
 
 You can update your hooks to the latest version automatically by running `pre-commit autoupdate`. By default, this will bring the hooks to the latest tag on the default branch.
 
 ***Note:*** After updating hooks, make sure to commit the changes.
+
+**Skipping pre-commit hooks**
+
+You can run `git commit --no-verify` to bypass the pre-commit hooks.
+
+***Follow the coding standards as per the [docs](docs/coding-standard.md).***
