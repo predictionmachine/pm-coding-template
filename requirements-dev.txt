@@ -3,6 +3,7 @@ black~=21.6b0  # pycharm error on this is ok
 # black_nbconvert~=0.2.0  # for notebooks
 coverage[toml]~=5.5
 flake8~=3.9.2
+flake8-copyright~=0.2.2
 interrogate~=1.4.0
 mypy~=0.902
 pre-commit~=2.13.0
