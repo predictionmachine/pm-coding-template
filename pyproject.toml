@@ -21,6 +21,9 @@ quiet = false
 color = true
 ignore-nested-functions = true
 
+[tool.isort]
+profile = "black"
+
 [tool.mypy]
 python_version = "3.8"
 # see https://mypy.readthedocs.io/en/stable/config_file.html#using-a-pyproject-toml-file
