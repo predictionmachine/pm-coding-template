@@ -15,7 +15,7 @@ This PR part of a larger effort:
 - [ ] Set an informative, carefully chosen **title**
 - [ ] Applied *labels* to the PR
 - [ ] Updated README.md and inline documentation as appropriate
-- [ ] Followed [Coding standards](https://github.com/predictionmachine/pm-coding-template#code-contents)
+- [ ] Followed [Coding standards](/docs/coding-standard.md#coding-standard)
 - [ ] Added TODO comments about the work not shipped in this PR
 - [ ] Documented bugs/issues you had to work around
 

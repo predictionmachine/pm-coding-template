@@ -25,7 +25,7 @@ env:
 
 jobs:
   # Check branch name standard as per `pm-coding-template`
-  # Ref: https://github.com/predictionmachine/pm-coding-template#github-branches-pull-requests
+  # Ref: [Branches & Pull Request](/docs/coding-standard.md#github-branches-pull-requests)
   check-branch-naming-convention:
     name: Check branch naming convention as per pm-coding-template
     runs-on: ubuntu-latest
