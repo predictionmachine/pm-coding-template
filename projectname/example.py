@@ -6,7 +6,7 @@
 """
 This file deals with UserId
 
-Provides support for listifying it, eg in service of having thigns as lists
+Provides support for listifying it, eg in service of having things as lists
 """
 from typing import List, NewType
 

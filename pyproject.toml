@@ -21,6 +21,9 @@ quiet = false
 color = true
 ignore-nested-functions = true
 
+[tool.isort]
+profile = "black"
+
 [tool.mypy]
 python_version = "3.8"
 # see https://mypy.readthedocs.io/en/stable/config_file.html#using-a-pyproject-toml-file
@@ -34,7 +37,11 @@ pretty = false
 
 # mypy per-module options:
 [[tool.mypy.overrides]]
-module = ['numpy', 'pandas.*', 'pyarrow.*', 'pytest.*', 'pytest_mock', 'setuptools']
+module = [
+    # alphabetical order
+    'pytest.*',
+    'pytest_mock',
+]
 ignore_missing_imports = true
 
 [tool.pytest.ini_options]
