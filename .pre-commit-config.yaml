@@ -107,3 +107,4 @@ repos:
         --durations=5
       ]
         language: system
+        pass_filenames: false
