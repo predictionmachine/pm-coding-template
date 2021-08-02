@@ -18,7 +18,7 @@
 #     The SKIP environment variable is a comma separated list of hook ids
 #     see https://pre-commit.com/#temporarily-disabling-hooks
 #
-# pm-version 0.2.1
+# pm-version 0.2.2
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 #######################################################################
@@ -94,3 +94,16 @@ repos:
 #          - types-orjson>=0.1.1
           - types-pytz>=2021.1.0
 #          - types-requests>=2.25.0
+
+  # PYTEST
+  - repo: local
+    hooks:
+      - id: pytest-check
+        name: pytest-check
+        entry: pytest
+        args: [
+        --cov=. --cov-config=pyproject.toml,
+        --continue-on-collection-errors, --no-cov-on-fail,
+        --durations=5
+      ]
+        language: system
