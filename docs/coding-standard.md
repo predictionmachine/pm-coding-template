@@ -1,6 +1,6 @@
 # Coding Standard
 
-Documents and Illustrates Coding Standards used at Prediction Machine.
+Documents and Illustrates Coding Standards used at [Prediction Machine](https://predmachine.com).
 
 As you ramp up on contributing code to Prediction Machine,
 please review the basics:
@@ -21,8 +21,8 @@ as a way to pair on code, a surprisingly fruitful technique
   * Target `python3.8` for compatibility (eg with AWS Lambda)
   * Pin dependency versions in requirements.txt with `~=`, eg `flake8~=3.8.4`
 * file names are normally all lowercase
-* when file names must have multiple words, use _ not -
-* Organize code in namespace and files. `tests` dir inside the namespace
+* when file names must have multiple words, use "_", not "-"
+* Organize code in namespace and files. `tests` dir at the top level
 * Configure and use [pre-commit hooks](https://pre-commit.com/#plugins). Copy [.pre-commit-config.yaml](.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
 
 ## Code Contents

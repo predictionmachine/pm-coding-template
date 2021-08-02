@@ -1,4 +1,4 @@
-# Repo or Project name
+# [Projectname]
 
 [![PM CI workflow](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml/badge.svg)](https://github.com/predictionmachine/pm-coding-template/actions/workflows/pm-gh-actions.yml)
 [![Maintainability](https://api.codeclimate.com/v1/badges/e4cab5c6472ba0512bd0/maintainability)](https://codeclimate.com/repos/602750680b442f4c8d007eb0/maintainability)

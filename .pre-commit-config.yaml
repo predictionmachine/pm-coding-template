@@ -96,11 +96,11 @@ repos:
         # verbose: true
         # args: [--ignore-missing-imports]
         additional_dependencies:
-#          - boto3-stubs[s3]>=1.18
-#          - mypy-boto3-s3>=1.18
-#          - types-orjson>=0.1.1
+          # - boto3-stubs[s3]>=1.18
+          # - mypy-boto3-s3>=1.18
+          # - types-orjson>=0.1.1
           - types-pytz>=2021.1.0
-#          - types-requests>=2.25.0
+          # - types-requests>=2.25.0
 
   # PYTEST
   - repo: local
@@ -109,9 +109,11 @@ repos:
         name: pytest-check
         entry: pytest
         args: [
-        --cov=. --cov-config=pyproject.toml,
-        --continue-on-collection-errors, --no-cov-on-fail,
-        --durations=5
+        --cov=.,
+        --cov-config=pyproject.toml,
+        --continue-on-collection-errors,
+        --durations=5,
+        --no-cov-on-fail,
       ]
         language: system
         pass_filenames: false
