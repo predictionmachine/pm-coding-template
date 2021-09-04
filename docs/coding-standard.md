@@ -15,7 +15,7 @@ please review the basics:
   using IntelliJ, IntelliJ with Python plugin may work)
   * [VSCode](https://code.visualstudio.com/) may also be viable if that's your strong preference
 * Pair Programming:
-  * We are evaluating [Duckly](https://duckly.com/tools/pycharm) as a way to pair on code, 
+  * We use [Duckly](https://duckly.com/tools/pycharm) as a way to pair on code, 
     a surprisingly fruitful technique
 * Dependencies:
   * Target `python3.8` for compatibility (e.g. with AWS Lambda)
