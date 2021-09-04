@@ -52,7 +52,7 @@ please review the basics:
 
 ## Github: branches, pull requests
 
-* 🛑 No new repos: do not create a new repository on your own -- Create a task on [ClickUp](https://app.clickup.com/login) to request one.
+* 🛑 No new repos: do not create a new repository on your own -- Create a task on [ClickUp](https://app.clickup.com/login), assign to @manasRK to request one.
   This keeps us more organized and naming consistent. In your ClickUp task, specify what the code
   in this repository will be responsible for doing. Consider what should be a shared repo.
 * Code is considered "shipped" (🎉) when it is accepted as a pull request and merged in `main`.
