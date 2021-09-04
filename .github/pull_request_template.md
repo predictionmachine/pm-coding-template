@@ -1,5 +1,5 @@
 ## Description
-ClickUp [task](https://app.clickup.com/t/DEV- <!--replace this comment with number-->)
+DEV-<!-- replace this with task id, leaving eg DEV-123 -->
 <!--link to issue or description: Issue #-->
 <!--What functionality does this add/problem does this fix?-->
 
