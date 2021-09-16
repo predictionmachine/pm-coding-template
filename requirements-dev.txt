@@ -4,7 +4,6 @@ black~=21.7b0  # pycharm error on this is ok
 coverage[toml]~=5.5
 flake8~=3.9.2
 interrogate~=1.4.0
-mccabe~=0.6.1  # check McCabe complexity. see https://github.com/PyCQA/mccabe
 isort~=5.9.3
 mypy==0.910
 pre-commit~=2.13.0
