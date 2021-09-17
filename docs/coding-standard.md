@@ -15,7 +15,7 @@ please review the basics:
   using IntelliJ, IntelliJ with Python plugin may work)
   * [VSCode](https://code.visualstudio.com/) may also be viable if that's your strong preference
 * Pair Programming:
-  * We use [Duckly](https://duckly.com/tools/pycharm) as a way to pair on code, 
+  * We use [Duckly](https://duckly.com/tools/pycharm) as a way to pair on code,
     a surprisingly fruitful technique
 * Dependencies:
   * Target `python3.8` for compatibility (e.g. with AWS Lambda)
@@ -23,7 +23,7 @@ please review the basics:
 * file names are normally all lowercase
 * when file names must have multiple words, use "_", not "-"
 * Organize code in namespace and files. `tests` dir at the top level
-* Configure and use [pre-commit hooks](https://pre-commit.com/#plugins). Copy [.pre-commit-config.yaml](.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
+* Configure and use [pre-commit hooks](https://pre-commit.com/#plugins). Copy [.pre-commit-config.yaml](https://github.com/predictionmachine/pm-coding-template/blob/main/.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
 
 ## Code Contents
 
@@ -36,7 +36,7 @@ please review the basics:
   are your friend
 * License:
   * Do put a disclaimer at the top of each file
-  * See [projectname/example.py](projectname/example.py) for an example
+  * See [projectname/example.py](https://github.com/predictionmachine/pm-coding-template/blob/main/projectname/example.py) for an example
   * You can enter it [in PyCharm](http://prntscr.com/1011gyr) and then [pick it](http://prntscr.com/1011fz5)
 
 * Documentation:
@@ -47,7 +47,7 @@ please review the basics:
   * Use [pytest](https://docs.pytest.org/en/stable/) as the default testing library
 * Type hints:
   * Use type hints and [mypy](https://mypy.readthedocs.io/en/stable/).
-  * See [projectname/example.py](projectname/example.py) for an example
+  * See [projectname/example.py](https://github.com/predictionmachine/pm-coding-template/blob/main/projectname/example.py) for an example
   * We recommend the [mypy plugin](https://plugins.jetbrains.com/plugin/11086-mypy) for the IDE
 
 ## Github: branches, pull requests
@@ -63,8 +63,6 @@ please review the basics:
 * Push your changes to the branch and then submit a pull request to merge to
   master. Assign the pull request reviewing duties to the person you are
   reporting to. You can do this in the IDE or on GitHub.
-* Use [this](.github/pull_request_template.md) PR template,
-  with proper description, whenever you raise a new PR.
 * Write a descriptive message summarizing your commit, and even state what
   you are trying to accomplish/larger task you are working on.
 * Use [GitHub Actions](https://docs.github.com/en/actions) to catch problems for
