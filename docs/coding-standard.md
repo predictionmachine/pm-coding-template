@@ -23,7 +23,7 @@ please review the basics:
 * file names are normally all lowercase
 * when file names must have multiple words, use "_", not "-"
 * Organize code in namespace and files. `tests` dir at the top level
-* Configure and use [pre-commit hooks](https://pre-commit.com/#plugins). Copy [.pre-commit-config.yaml](.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
+* Configure and use [pre-commit hooks](https://pre-commit.com/#plugins). Copy [.pre-commit-config.yaml](https://github.com/predictionmachine/pm-coding-template/blob/main/.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
 
 ## Code Contents
 
@@ -47,7 +47,7 @@ please review the basics:
   * Use [pytest](https://docs.pytest.org/en/stable/) as the default testing library
 * Type hints:
   * Use type hints and [mypy](https://mypy.readthedocs.io/en/stable/).
-  * See [projectname/example.py](projectname/example.py) for an example
+  * See [projectname/example.py](https://github.com/predictionmachine/pm-coding-template/blob/main/projectname/example.py) for an example
   * We recommend the [mypy plugin](https://plugins.jetbrains.com/plugin/11086-mypy) for the IDE
 
 ## Github: branches, pull requests
