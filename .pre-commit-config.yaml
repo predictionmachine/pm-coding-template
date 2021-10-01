@@ -18,7 +18,7 @@
 #     The SKIP environment variable is a comma separated list of hook ids
 #     see https://pre-commit.com/#temporarily-disabling-hooks
 #
-# pm-version 0.2.2
+# pm-version 0.3.0
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 #######################################################################
