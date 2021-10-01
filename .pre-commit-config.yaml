@@ -44,6 +44,14 @@ repos:
       - id: check-added-large-files
         args: ['--maxkb=50']
       - id: no-commit-to-branch
+  
+  # AUTOFLAKE - removes unused imports and unused variables.
+  - repo: https://github.com/myint/autoflake
+    rev: v1.4
+    hooks:
+      - id: autoflake
+        args: ['--in-place', '--remove-all-unused-imports']
+        # see: https://github.com/myint/autoflake#advanced-usage
 
   # BLACK
   - repo: https://github.com/psf/black
