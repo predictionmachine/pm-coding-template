@@ -90,11 +90,11 @@ repos:
         pass_filenames: false
 
   # ISORT
-  -   repo: https://github.com/pre-commit/mirrors-isort
-      rev: 'v5.9.3'
-      hooks:
-        - id: isort
-          args: ["--settings-path", "pyproject.toml"]
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: 'v5.9.3'
+    hooks:
+      - id: isort
+        args: ["--settings-path", "pyproject.toml"]
 
   # MYPY
   - repo: https://github.com/pre-commit/mirrors-mypy
