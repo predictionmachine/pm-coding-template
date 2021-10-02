@@ -18,7 +18,7 @@
 #     The SKIP environment variable is a comma separated list of hook ids
 #     see https://pre-commit.com/#temporarily-disabling-hooks
 #
-# pm-version 0.2.2
+# pm-version 0.3.0
 # See https://pre-commit.com for more information
 # See https://pre-commit.com/hooks.html for more hooks
 #######################################################################
@@ -44,6 +44,14 @@ repos:
       - id: check-added-large-files
         args: ['--maxkb=50']
       - id: no-commit-to-branch
+  
+  # AUTOFLAKE - removes unused imports and unused variables.
+  - repo: https://github.com/myint/autoflake
+    rev: v1.4
+    hooks:
+      - id: autoflake
+        args: ['--in-place', '--remove-all-unused-imports']
+        # see: https://github.com/myint/autoflake#advanced-usage
 
   # BLACK
   - repo: https://github.com/psf/black
@@ -82,11 +90,11 @@ repos:
         pass_filenames: false
 
   # ISORT
-  -   repo: https://github.com/pre-commit/mirrors-isort
-      rev: 'v5.9.3'
-      hooks:
-        - id: isort
-          args: ["--settings-path", "pyproject.toml"]
+  - repo: https://github.com/pre-commit/mirrors-isort
+    rev: 'v5.9.3'
+    hooks:
+      - id: isort
+        args: ["--settings-path", "pyproject.toml"]
 
   # MYPY
   - repo: https://github.com/pre-commit/mirrors-mypy
