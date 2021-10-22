@@ -1,6 +1,6 @@
 # About `pre-commit`
 
-[pre-commit hooks](https://pre-commit.com/) are a subset of Git hooks. Git-hooks are scripts that run automatically every time a particular event occurs in a Git repository. A “pre-commit hook” runs before a commit takes place.
+[pre-commit hooks](https://pre-commit.com/) are a subset of git hooks. git hooks are scripts that run automatically every time a particular event occurs in a git repository. A “pre-commit hook” runs before a commit takes place.
 
 ---
 
@@ -53,6 +53,8 @@ So you can fix these issues before committing the changes and sending them for c
 
 ## installation & usage
 
+### Install `pre-commit`
+
 - Using [`pip`](https://pip.pypa.io/en/stable/) :
 
 ```shell
@@ -65,4 +67,6 @@ pip install pre-commit
 brew install pre-commit
 ```
 
-- Using conda (via conda-forge):
+- Using [conda](https://conda.io/) (via [conda-forge](https://conda-forge.org/)):
+
+
