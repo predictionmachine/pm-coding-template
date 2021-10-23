@@ -139,5 +139,5 @@ So you can fix these issues before committing the changes and sending them for c
             # - types-requests>=2.25.0
   ```
 
-- `flake8` hook needs an additiona dependency ([flake8-copyright](https://github.com/savoirfairelinux/flake8-copyright)) that checks for copyright notices in all python files.
+- `flake8` hook needs an additional dependency ([flake8-copyright](https://github.com/savoirfairelinux/flake8-copyright)) that checks for copyright notices in all python files.
 - Other hooks that need the dependencies should be configured in `.pre-commit-config.yaml` config file.
