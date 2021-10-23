@@ -53,20 +53,73 @@ So you can fix these issues before committing the changes and sending them for c
 
 ## installation & usage
 
-### Install `pre-commit`
+### 1. Install `pre-commit`:
 
 - Using [`pip`](https://pip.pypa.io/en/stable/) :
 
 ```shell
-pip install pre-commit
+$ pip install pre-commit
 ```
 
 - Using [homebrew](https://brew.sh/)
 
 ```shell
-brew install pre-commit
+$ brew install pre-commit
 ```
 
 - Using [conda](https://conda.io/) (via [conda-forge](https://conda-forge.org/)):
 
+### 2. Install `pre-commit` hooks:
 
+- The pre-commit hook configurations are defined in [`.pre-commit-config.yaml`](https://github.com/predictionmachine/pm-coding-template/blob/main/.pre-commit-config.yaml)
+- To install the hooks, run:
+
+```shell
+$ pre-commit install
+```
+
+### 3. Update hook version:
+
+- To update hook version, periodically run:
+
+```shell
+$ pre-commit autoupdate
+```
+
+### 4. Running `pre-commit` hooks on files:
+
+- To run hooks on all the files, run:
+
+  ```shell
+  $ pre-commit run --all-files
+  ```
+
+- To run hooks on specifc file (single file), run:
+
+  ```shell
+  $ pre-commit run --files /path_of_the_file
+  ```
+
+- To skip `pre-commit` hook on commit, run:
+
+  ```shell
+  $ git commit -m "change_type: your message" --no-verify
+  ```
+
+- Skipping a hook:
+
+  - To skip a specific hook (or set of hook) temporarily, use `SKIP` environment variable with hook id when doing a commit.
+  - The `SKIP` environment variable is a comma separated list of hook ids. This allows you to skip a single hook instead of `--no-verify` ing the entire commit.
+  - Syntax:
+
+    ```shell
+    $ SKIP=hook_id,hook_id_2 git commit -m "commit message"
+    ```
+
+  - Example:
+
+    ```shell
+    $ SKIP=flake8 git commit -m "doc: update readme"
+    ```
+
+- 
