@@ -39,52 +39,52 @@ So you can fix these issues before committing the changes and sending them for c
   - [docker-compose-check](https://github.com/IamTheFij/docker-pre-commit#docker-compose-check): Verifies that docker-compose files are valid.
 
   - [flake8](https://github.com/pycqa/flake8): Python code linter that wraps [PyFlakes](https://github.com/PyCQA/pyflakes), [pycodestyle](https://github.com/PyCQA/pycodestyle) and Ned Batchelder's [McCabe](https://github.com/PyCQA/mccabe) script.
-    - [flake8-copyright](https://github.com/savoirfairelinux/flake8-copyright): Checks for copyright notices in all python files
+    - [flake8-copyright](https://github.com/savoirfairelinux/flake8-copyright): Additional dependency for flake8 that checks for copyright notices in all python files.
 
   - [Interrogate](https://github.com/econchick/interrogate): Checks code base for missing docstrings.
 
   - [isort](https://github.com/pre-commit/mirrors-isort): Sort Python imports.
 
-  - [Mypy](https://github.com/pre-commit/mirrors-mypy): [mypy](https://github.com/python/mypy) type checks for Python.
+  - [Mypy](https://github.com/pre-commit/mirrors-mypy): [mypy](https://github.com/python/mypy) type checks for Python with additional dependencies.
 
   - [pytest-check](https://github.com/predictionmachine/pm-coding-template/blob/8a538d6dc35a0559bdf92fda02d118e1608a7d93/.pre-commit-config.yaml#L113): Running pytest locally.
 
 ---
 
-## installation & usage
+## Installation & usage
 
 ### 1. Install `pre-commit`:
 
 - Using [`pip`](https://pip.pypa.io/en/stable/) :
 
-```shell
-$ pip install pre-commit
-```
+  ```shell
+  $ pip install pre-commit
+  ```
 
 - Using [homebrew](https://brew.sh/)
 
-```shell
-$ brew install pre-commit
-```
+  ```shell
+  $ brew install pre-commit
+  ```
 
 - Using [conda](https://conda.io/) (via [conda-forge](https://conda-forge.org/)):
 
 ### 2. Install `pre-commit` hooks:
 
-- The pre-commit hook configurations are defined in [`.pre-commit-config.yaml`](https://github.com/predictionmachine/pm-coding-template/blob/main/.pre-commit-config.yaml)
+- The pre-commit hook configurations are defined in [`.pre-commit-config.yaml`](https://github.com/predictionmachine/pm-coding-template/blob/main/.pre-commit-config.yaml) file.
 - To install the hooks, run:
 
-```shell
-$ pre-commit install
-```
+  ```shell
+  $ pre-commit install
+  ```
 
 ### 3. Update hook version:
 
 - To update hook version, periodically run:
 
-```shell
-$ pre-commit autoupdate
-```
+  ```shell
+  $ pre-commit autoupdate
+  ```
 
 ### 4. Running `pre-commit` hooks on files:
 
@@ -122,4 +122,22 @@ $ pre-commit autoupdate
     $ SKIP=flake8 git commit -m "doc: update readme"
     ```
 
-- 
+- `mypy` hook needs the typing dependencies installed, which mirrors `requirement-dev.txt`, for example:
+
+  ```shell
+  - repo: https://github.com/pre-commit/mirrors-mypy
+      rev: 'v0.910'
+      hooks:
+        - id: mypy
+          # verbose: true
+          # args: [--ignore-missing-imports]
+          additional_dependencies:
+            # - boto3-stubs[s3]>=1.18
+            # - mypy-boto3-s3>=1.18
+            # - types-orjson>=0.1.1
+            - types-pytz>=2021.1.0
+            # - types-requests>=2.25.0
+  ```
+
+- `flake8` hook needs an additiona dependency ([flake8-copyright](https://github.com/savoirfairelinux/flake8-copyright)) that checks for copyright notices in all python files.
+- Other hooks that need the dependencies should be configured in `.pre-commit-config.yaml` config file.
