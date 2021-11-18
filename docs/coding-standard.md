@@ -23,7 +23,7 @@ please review the basics:
 * file names are normally all lowercase
 * when file names must have multiple words, use "_", not "-"
 * Organize code in namespace and files. `tests` dir at the top level
-* Configure and use [pre-commit hooks](https://pre-commit.com/#plugins). Copy [.pre-commit-config.yaml](https://github.com/predictionmachine/pm-coding-template/blob/main/.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
+* Configure and use [pre-commit hooks](pre-commit.md#about-pre-commit). Copy [.pre-commit-config.yaml](https://github.com/predictionmachine/pm-coding-template/blob/main/.pre-commit-config.yaml) to the root directory of your repo and follow the [installation](https://pre-commit.com/#installation) instructions to run it.
 
 ## Code Contents
 
